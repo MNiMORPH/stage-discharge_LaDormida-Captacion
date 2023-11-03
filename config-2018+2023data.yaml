@@ -55,7 +55,7 @@ bounds:
 
 output:
     # CSV output file name
-    outfile: 'Manning2.csv'
+    outfile: 'RatingCurveParams_DoubleManning.csv'
     # True/False Boolean flags
     plot: True
     verbose: True
