@@ -1,0 +1,79 @@
+river: La Dormida
+station: Captacion
+
+author: Andy Wickert
+
+data:
+    # Filename expected with columns "Q", "Stage"
+    filename: 'LD-Cap_stage_adjusted.tsv'
+    # tab, space, or comma
+    delimiter: 'tab'
+    # If data set uses US cfs (Q) and feet (Stage), converts these to metric.
+    us-units: False
+
+channel:
+    # meters; if ommitted, will be solved for as a free variable
+    width: 2.5
+    # meters; if omitted, will be solved for as a free variable
+    # depth:
+    # unitless
+    slope: 0.0788
+    # Use depth instead of hydraulic radius for calculations. True/False.
+    use_depth: False
+
+bounds:
+    # Uncomment the following to set them different from the defaults
+    # They should be given in LOWER, UPPER
+    # Estimated from clast count: 0.365
+    # Range for mountain streams with gravel + few boulders: 0.03--0.05
+    mannings_n_bounds:
+        - 0.03
+        - 0.05
+    # Floodplain characteristics:
+    # * Approximately rectangular
+    # * 9 m wide (- channel = 6.5 m)
+    # * 0.8 m high above channel (so 1.6 total) -- but assume infinite
+    # * Manning's n for heavy timber or med-to-dense brush ~0.1
+    # k_fp = (B-b)/n * S^(1/2) = 17.9
+    floodplain_coeff_bounds:
+        - 17
+        - 19
+    floodplain_exponent_bounds:
+        - 1.66666666
+        - 1.66666667
+    stage_offset_bounds:
+        # On Google Sheet, I have + 7 cm for 2020 onwards.
+        # And 10 cm from the start, to which this is now referenced
+        - 0.0
+        - 0.25
+    channel_depth_bounds:
+        - 0.7
+        - 0.9
+    channel_width_bounds:
+        - 2
+        - 3
+
+output:
+    # CSV output file name
+    outfile: 'Manning2.csv'
+    # True/False Boolean flags
+    plot: True
+    verbose: True
+
+
+# Google Sheets with some info
+
+# Loads of info: Ally's doc
+# https://docs.google.com/document/d/1caGG5HEVngiJxEbwq-kJndElEj6405erhqZFC2eIbXE/edit
+
+# Gauging for Q
+# https://docs.google.com/spreadsheets/d/1b7bAMSlWXvmM3jE8ZHZavKbIcoAe3LhAdyQaY9NtlUE/edit#gid=1031266182
+# https://docs.google.com/spreadsheets/d/1AxL4z-Ay1JkPPwofg8-OIFP94LUbJ7dv/edit#gid=1943562548
+
+# Manning's n
+# https://www.fsl.orst.edu/geowater/FX3/help/8_Hydraulic_Reference/Mannings_n_Tables.htm
+
+# Clast count
+# https://docs.google.com/spreadsheets/d/1q9oQwMQLo6mjjp5UEKuj_EfUGJTwSjiatr4VkqVJb2I/edit#gid=1742666682
+
+
