@@ -15,7 +15,7 @@ channel:
     # meters; if ommitted, will be solved for as a free variable
     width: 2.5
     # meters; if omitted, will be solved for as a free variable
-    # depth:
+    depth: 0.7
     # unitless
     slope: 0.0788
     # Use depth instead of hydraulic radius for calculations. True/False.
@@ -36,8 +36,14 @@ bounds:
     # * Manning's n for heavy timber or med-to-dense brush ~0.1
     # k_fp = (B-b)/n * S^(1/2) = 17.9
     floodplain_coeff_bounds:
-        - 17
-        - 19
+        # Rectangular approx.
+        # b = 6 m
+        # S = 0.0788
+        # n = 0.2 per Arcement & Schneider (1989)
+        # if (h-h_\beta)^(5/3), then k = b S^(1/2) / n
+        # Value = 8.4214
+        - 8.41
+        - 8.43
     floodplain_exponent_bounds:
         - 1.66666666
         - 1.66666667
@@ -46,9 +52,9 @@ bounds:
         # And 10 cm from the start, to which this is now referenced
         - 0.0
         - 0.25
-    channel_depth_bounds:
-        - 0.7
-        - 0.9
+    #channel_depth_bounds:
+    #    - 0.7
+    #    - 0.9
     channel_width_bounds:
         - 2
         - 3
