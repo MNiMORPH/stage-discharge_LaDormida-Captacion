@@ -59,11 +59,25 @@ bounds:
         - 2
         - 3
 
+plotting:
+    # If this is present, the plot will be saved.
+    # Format set by file extension.
+    # Path may be relative or absolute
+    savepath: 'LaDormida_Captacion.pdf'
+    # True/False Boolean flag
+    show: True
+    # Optional fixed plotting bounds
+    stage_min: -0.001
+    stage_max: 1
+    discharge_min: -0.01
+    discharge_max: 10
+    # Plot curve even if discharge is negative (nonphysical)
+    display_negative_rating_curve: False
+
 output:
-    # CSV output file name
-    outfile: 'RatingCurveParams_DoubleManning.csv'
-    # True/False Boolean flags
-    plot: True
+    # CSV output file name or full path
+    outfile: 'doublemanning_params_LDcap.csv'
+    # True/False Boolean flag
     verbose: True
 
 
