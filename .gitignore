@@ -1,0 +1,5 @@
+# Linux temp files
+*.swp
+
+# PDF figure outputs
+*.pdf
