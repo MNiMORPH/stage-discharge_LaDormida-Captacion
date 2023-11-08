@@ -33,7 +33,7 @@ df['Distance LR'] = distanceLR
 
 plt.figure( figsize=(8.3/1.5, 5/1.5) )
 plt.plot( df['Distance LR'], df['Elevation'] - monL['Elevation'].iloc[0],
-            color='.2', linewidth=2 )
+            color='.3', linewidth=4 )
 
 plt.xlabel('Distance from river-left monument [m]', fontsize=14)
 plt.ylabel('Elevation from\nriver-left monument [m]', fontsize=14)
