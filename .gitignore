@@ -1,5 +1,6 @@
 # Linux temp files
 *.swp
+.~lock.*#
 
 # PDF figure outputs
 *.pdf
