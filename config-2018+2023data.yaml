@@ -13,7 +13,7 @@ data:
 
 channel:
     # meters; if ommitted, will be solved for as a free variable
-    width: 2.5
+    width: 2.6
     # meters; if omitted, will be solved for as a free variable
     depth: 0.7
     # unitless
@@ -31,7 +31,7 @@ bounds:
         - 0.05
     # Floodplain characteristics:
     # * Approximately rectangular
-    # * 9 m wide (- channel = 6.5 m)
+    # * 8.3 m wide (- channel = 5.5 m)
     # * 0.8 m high above channel (so 1.6 total) -- but assume infinite
     # * Manning's n for heavy timber or med-to-dense brush ~0.1
     # k_fp = (B-b)/n * S^(1/2) = 17.9
@@ -39,11 +39,11 @@ bounds:
         # Rectangular approx.
         # b = 6 m
         # S = 0.0788
-        # n = 0.2 per Arcement & Schneider (1989)
+        # n = 0.14 per Arcement & Schneider (1989) & est.
         # if (h-h_\beta)^(5/3), then k = b S^(1/2) / n
-        # Value = 8.4214
-        - 8.41
-        - 8.43
+        # Value = 11.429
+        - 11.428
+        - 11.430
     floodplain_exponent_bounds:
         - 1.66666666
         - 1.66666667

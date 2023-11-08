@@ -1,2 +1,2 @@
 Manning's n,Floodplain discharge coefficient,Floodplain discharge exponent,Stage at Q = 0 [m],Bank height [m],Channel width [m],Channel slope,SD: Manning's n,SD: Floodplain discharge coefficient,SD: Floodplain discharge exponent,SD: Stage at Q = 0 [m],SD: Bank height [m],SD: Channel width [m],SD: Channel slope,Fit RMSE [m^3/s],Use flow depth instead of Rh
-0.03555179786074519,8.42,1.666666665,0.06298661821391087,0.7,2.5,0.0788,inf,inf,inf,inf,0,0,0,0.024664591590350768,False
+0.03754120328756746,11.429,1.666666665,0.06219058342676414,0.7,2.6,0.0788,inf,inf,inf,inf,0,0,0,0.02454666565116147,False
