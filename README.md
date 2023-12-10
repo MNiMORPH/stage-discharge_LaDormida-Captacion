@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10334038.svg)](https://doi.org/10.5281/zenodo.10334038)
+
 # stage-discharge_LaDormida-Captacion
 River stage and discharge at La Dormida Captación, Cayambe, Ecuador, along with supporting files.
 
