@@ -3,7 +3,7 @@ message: "Please cite this data set as below."
 authors:
 - family-names: "Ng"
   given-names: "Gene-Hua Crystal"
-  orcid:" https://orcid.org/0000-0002-7399-6617"
+  orcid: "https://orcid.org/0000-0002-7399-6617"
 - family-names: "La Frenierre"
   given-names: "Jeff"
   orcid: "https://orcid.org/0000-0001-8813-6903"
