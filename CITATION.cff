@@ -21,7 +21,7 @@ authors:
   given-names: "Ally"
 title: "Stream-gauging Data: La Dormida Captación"
 version: 2023.12.10
-doi: 
+doi: 10.5281/zenodo.10334038
 date-released: 2023-12-10
 url: "https://github.com/MNiMORPH/stage-discharge-LaDormida_Captacion"
 type: data
