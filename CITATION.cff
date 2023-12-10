@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this data set as below."
+authors:
+- family-names: "Ng"
+  given-names: "Gene-Hua Crystal"
+  orcid:" https://orcid.org/0000-0002-7399-6617"
+- family-names: "La Frenierre"
+  given-names: "Jeff"
+  orcid: "https://orcid.org/ 0000-0001-8813-6903"
+- family-names: "Stanton"
+  given-names: "Daniel"
+  orcid: "https://orcid.org/0000-0002-6713-9328"
+- family-names: "Wickert"
+  given-names: "Andrew D."
+  orcid: "https://orcid.org/0000-0002-9545-3365"
+- family-names: "Nelson"
+  given-names: "Leah"
+- family-names: "Capron"
+  given-names: "Shauna"
+- family-names: "Jacoby"
+  given-names: "Ally"
+title: "Stream-gauging Data: La Dormida Captación"
+version: 2023.12.10
+doi: 
+date-released: 2023-12-10
+url: "https://github.com/MNiMORPH/stage-discharge-LaDormida_Captacion"
+type: data
